@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>介紹網頁</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">歡迎來到我的介紹網頁</p>
+      <h1>你好，我是你的網站介紹頁面</h1>
+      <p class="subtitle">
+        這是一個簡單而現代的介紹網頁範例，適合展示個人、作品或服務內容。
+      </p>
+      <a class="cta-button" href="#about">了解更多</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section card">
+      <h2>關於我</h2>
+      <p>
+        我是一個熱愛設計與創意展示的人，想透過清晰的網頁呈現自我介紹和專案故事。
+      </p>
+      <p>
+        這個頁面可以修改成你的名字、技能、專案或服務介紹，讓訪客快速了解你或你的團隊。
+      </p>
+    </section>
+
+    <section class="section features">
+      <article class="feature-card">
+        <h3>專業簡介</h3>
+        <p>介紹自己的背景、專長與核心價值，讓訪客第一時間建立信任感。</p>
+      </article>
+      <article class="feature-card">
+        <h3>作品展示</h3>
+        <p>放上近期專案、作品或成就，讓內容更具象、更容易記住。</p>
+      </article>
+      <article class="feature-card">
+        <h3>聯絡方式</h3>
+        <p>提供電子郵件、社群連結或聯絡表單，讓想合作的人可以輕鬆聯繫。</p>
+      </article>
+    </section>
+
+    <section class="section card">
+      <h2>我的網站特色</h2>
+      <ul>
+        <li>響應式網頁設計，適合手機與桌面瀏覽</li>
+        <li>簡潔清爽的版面，讓內容更好閱讀</li>
+        <li>易於客製化，快速替換文字與配色</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> 你的名字。謝謝你的瀏覽。</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
